@@ -1,0 +1,189 @@
+ @import url('http://fonts.cdnfonts.com/css/norse');
+ @import url('http://fonts.cdnfonts.com/css/hando-soft-trial');
+
+   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Hando Soft Trial', sans-serif;                          
+    height: 100vh;
+    background-color: rgb(240, 255, 255, 0.4);
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    flex: 36%;
+   
+}
+
+.image{
+   position: relative;
+  
+}
+
+.image img{
+    width: 100%;
+    height: 100vh;
+}
+
+.desc, .credit{
+    position: absolute;
+}
+
+.desc{
+    background-color: rgba(0,0,0,0.5);
+    top: 20%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Norse', sans-serif; 
+    padding: 5px 0;
+    width: 38%;
+}
+
+.desc img{
+    width: 14%;
+}
+
+.credit{
+    bottom: 1%;
+    color: #fff;
+    font-size: 13px;
+   margin-left: 10.9%;
+}
+
+aside{
+    flex: 60%;
+   
+}
+
+aside .paragraph{
+    margin-top: 3.5rem;
+    margin-right: 13rem;
+    line-height: 1.2;
+    font-size: 19px;
+    word-spacing: .01em;
+    font-weight: 550;
+    padding: 2rem 3.4rem 1.4rem 2rem;
+    
+}
+
+aside .paragraph p:first-child{
+    margin-bottom: 1.6rem;
+}
+
+aside .white-form{
+    background-color: #fff;
+    padding: 1rem 3.4rem 2.4rem 2.4rem;
+    box-shadow: 0 5px 7.5px rgba(26, 26, 26, 0.15);
+}
+
+aside .white-form form{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.form-item{
+    flex: 42%;
+    margin-top: .5rem;
+}
+
+.form-item label{
+    font-size: 12px;
+    font-weight: 550;
+    letter-spacing: .04em;
+}
+
+.form-item input{
+    padding: 3px 10px;
+    border: 1px solid #e5e7eb;
+}
+
+.form-item input:focus{
+    outline: 1px solid rgb(73, 73, 184);
+    box-shadow: 0 5px 7.5px rgba(26, 26, 26, 0.15);
+}
+
+.form-item input:invalid{
+    outline: 1px solid rgb(228, 40, 7);
+    box-shadow: 0 5px 7.5px rgba(26, 26, 26, 0.15);
+}
+
+.bottom{
+    margin-top: 1rem;
+    padding: 1rem 3.4rem 2.4rem 2.4rem;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.bottom input{
+    border-radius: 8px;
+    background-color: #596d48;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    letter-spacing: .02em;
+    font-weight: 500;
+    padding: 10px 32px;
+    margin-bottom: 1.7rem;
+    box-shadow: 0 2.5px 7.5px rgba(0, 0, 0, 0.15);
+}
+
+.bottom a{
+    text-decoration: none;
+    color: #596d48;
+}
+
+
+
+
+
+
+
+
+
+@media( max-width:991px) and (min-width:768px){
+   aside .paragraph{
+    margin-top: 0;
+    margin-right: 3rem;
+   }
+
+   .bottom{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .3rem;
+   }
+}
+
+@media( max-width:767px){
+    main{
+        flex-direction: column;
+    }
+
+    .desc, .credit{
+        width: 100%;
+    }
+
+    .credit p{
+        text-align: center;
+        margin-left: -7rem;
+    }
+
+    aside .paragraph{
+        margin-right: 1rem;
+       }
+}
